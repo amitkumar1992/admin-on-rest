@@ -17,6 +17,7 @@ import withPermissionsFilteredChildren from '../../auth/withPermissionsFilteredC
 export class Edit extends Component {
     constructor(props) {
         super(props);
+        console.log("propssssssssssssssss", props);
         this.state = {
             key: 0,
             record: props.data,
@@ -25,6 +26,7 @@ export class Edit extends Component {
     }
 
     componentDidMount() {
+        console.log("this.propssssssssssssssss", this.props);
         this.updateData();
     }
 
